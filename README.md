@@ -41,8 +41,6 @@ The work was originally presented as part of a Master's course in Data Science.
 All in all, the contribution of this project lies in highlighting how different exploration strategies affect the learning behavior of reinforcement learning agents:
 - SARSA is preferable for scenarios where the agent is risk-avoidant. Its on-policy nature leads to safer, more conservative paths that prioritize stability over speed.
 - Q-Learning is more suitable for scenarios where the agent is a risk-taker, as it aggressively exploits high-reward paths—even when they come with higher risks, like walking close to the cliff.
-The essential difference between SARSA and Q-Learning lies in their exploration strategies rather than in their convergence capabilities.
-When they adopt the same updating policy (100% greedy) they converge to the same solution
 
 | Algorithm | Convergence Speed | Stability | Path Safety |
 |----------|-------------------|-----------|-------------|
@@ -51,3 +49,6 @@ When they adopt the same updating policy (100% greedy) they converge to the same
 
 Q-Learning achieves higher immediate rewards but at the risk of falling off the cliff. 
 SARSA is more cautious, resulting in fewer penalties but longer paths.
+The essential difference between SARSA and Q-Learning lies in their exploration strategies rather than in their convergence capabilities.
+When they adopt the same updating policy (100% greedy) they converge to the same solution
+
